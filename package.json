@@ -6,8 +6,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.2",
+    "@vercel/analytics": "^1.1.1",
+    "flowbite": "^1.8.1",
+    "mongoose": "^7.6.0",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-phone-input-2": "^2.15.1",
+    "tw-elements": "^1.0.0",
+    "vercel": "^32.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
   }
 }
