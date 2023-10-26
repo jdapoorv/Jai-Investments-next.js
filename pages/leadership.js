@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Contact from "../components/Contact";
 import { Inconsolata } from "next/font/google";
+import Banner from "../components/Banner";
 
 const inconsolata = Inconsolata({ subsets: ["latin"], weight: "400" });
 
@@ -28,11 +29,12 @@ const Leadership = () => {
             <div
               className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
               style={{
-                backgroundImage:
-                  'url("https://source.unsplash.com/MP0IUfwrn0A")',
+                backgroundImage: 'url("dev.jpg")',
               }}
             />
-            <h1 className="text-3xl font-bold pt-8 lg:pt-0 dark:text-white">Devendra Kumar</h1>
+            <h1 className="text-3xl font-bold pt-8 lg:pt-0 dark:text-white">
+              Devendra Kumar
+            </h1>
             <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-600 opacity-25" />
             <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start dark:text-white">
               <svg
@@ -54,8 +56,10 @@ const Leadership = () => {
               </svg>
               New Mandi, Muzaffarnagar (U.P)
             </p>
-            <p className={`pt-8 text-lg ${inconsolata.className} text-justify dark:text-gray-200`}>
-              Hi! With 7+ years of market-leading experience Jai Investments has
+            <p
+              className={`pt-8 text-lg ${inconsolata.className} text-justify dark:text-gray-200`}
+            >
+              With 10+ years of market-leading experience Jai Investments has
               established itself as customer's go-to insurance consultancy. The
               key to our customer's satisfaction lies in our focus on giving
               paramount importance to our after-sales service. React out to us
@@ -78,7 +82,7 @@ const Leadership = () => {
         <div className="w-full lg:w-2/5">
           {/* Big profile image for side bar (desktop) */}
           <img
-            src="https://source.unsplash.com/MP0IUfwrn0A"
+            src="/dev.jpg"
             className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
           />
           {/* Image from: http://unsplash.com/photos/MP0IUfwrn0A */}
@@ -86,8 +90,14 @@ const Leadership = () => {
       </div>
 
       {/* TIMELINE */}
-      <div className="flex flex-col justify-center divide-y divide-slate-200">
-        <h1 className="text-4xl md:text-5xl text-center text-blue-600 font-extrabold drop-shadow-sm dark:text-white pb-16">Our Timeline</h1>
+      <div className="flex flex-col justify-center divide-y divide-slate-200 mb-12">
+        <h1 className="text-4xl md:text-5xl text-center text-blue-600 font-extrabold drop-shadow-sm dark:text-white pb-16">
+          Achievements
+          <p className="text-lg mt-4">
+            CEO Club Member of Niva Bupa (2021-2023){" "}
+          </p>
+        </h1>
+
         <div className="w-full max-w-3xl mx-auto pb-16">
           <div className="-my-6">
             {/* Item #1 */}
@@ -99,88 +109,129 @@ const Leadership = () => {
               {/* Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) */}
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-blue-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                  May, 2020
+                  2016
                 </time>
-                <div className="text-md font-bold text-slate-900">
-                  Acme was founded in Milan, Italy
-                </div>
               </div>
               {/* Content */}
               <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra pharetra massa
-                massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit
-                cursus risus.
+                Jai Investments was founded in Muzaffarnagar (U.P.) India.
               </div>
             </div>
             {/* Item #2 */}
             <div className="relative pl-8 sm:pl-32 py-6 group">
               {/* Purple label */}
               <div className="font-caveat font-medium text-xl text-blue-500 mb-1 sm:mb-0">
-                The milestone
+                Gold Club Member of Apollo Munich
               </div>
               {/* Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) */}
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-blue-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                  May, 2021
+                  2016-2019
                 </time>
-                <div className="text-md font-bold text-slate-900">
-                  Reached 5K customers
-                </div>
               </div>
               {/* Content */}
               <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra pharetra massa
-                massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit
-                cursus risus.
+                Gold Club is a part of prestigious AMSA club (Apollo Munich
+                Signature Award).
               </div>
             </div>
             {/* Item #3 */}
             <div className="relative pl-8 sm:pl-32 py-6 group">
               {/* Purple label */}
               <div className="font-caveat font-medium text-xl text-blue-500 mb-1 sm:mb-0">
-                The acquisitions
+                Star Category Advisor in (UIICL)
               </div>
               {/* Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) */}
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-blue-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                  May, 2022
+                  2016-2022
                 </time>
-                <div className="text-md font-bold text-slate-900">
-                  Acquired various companies, inluding Technology Inc.
-                </div>
               </div>
               {/* Content */}
               <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra pharetra massa
-                massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit
-                cursus risus.
+                Achieved Star category as an Advisor in United India Insurance
+                Co. Ltd.
               </div>
             </div>
             {/* Item #4 */}
             <div className="relative pl-8 sm:pl-32 py-6 group">
               {/* Purple label */}
               <div className="font-caveat font-medium text-xl text-blue-500 mb-1 sm:mb-0">
-                The IPO
+                Star Peformer in Iffco Tokio
               </div>
               {/* Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) */}
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-blue-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                  May, 2023
+                  2016-2022
                 </time>
-                <div className="text-md font-bold text-slate-900">
-                  Acme went public at the New York Stock Exchange
-                </div>
               </div>
               {/* Content */}
               <div className="text-slate-500">
-                Pretium lectus quam id leo. Urna et pharetra pharetra massa
-                massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit
-                cursus risus.
+                Received prestigious Award for being Star performer as an
+                advisor of Iffco Tokio General Insurance Co. Ltd.
+              </div>
+            </div>
+            {/* Item #5 */}
+            <div className="relative pl-8 sm:pl-32 py-6 group">
+              {/* Purple label */}
+              <div className="font-caveat font-medium text-xl text-blue-500 mb-1 sm:mb-0">
+                Gold Club Member of HDFC Ergo
+              </div>
+              {/* Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) */}
+              <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-blue-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
+                  2019-2022
+                </time>
+              </div>
+              {/* Content */}
+              <div className="text-slate-500">
+                HDFC Ergo awarded a Gold Club Membership.
+              </div>
+            </div>
+            {/* Item #6 */}
+            <div className="relative pl-8 sm:pl-32 py-6 group">
+              {/* Purple label */}
+              <div className="font-caveat font-medium text-xl text-blue-500 mb-1 sm:mb-0">
+                Platinum Plus Club Member in Niva Bupa
+              </div>
+              {/* Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) */}
+              <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-blue-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
+                  2020-2022
+                </time>
+              </div>
+              {/* Content */}
+              <div className="text-slate-500">
+                Achieved a membership in the top-most club of best performing
+                Advisors on monthly basis in Niva Bupa Health Insurance Co. Ltd.
+              </div>
+            </div>
+            {/* Item #7 */}
+            <div className="relative pl-8 sm:pl-32 py-6 group">
+              {/* Purple label */}
+              <div className="font-caveat font-medium text-xl text-blue-500 mb-1 sm:mb-0">
+                APC Qualifier in Niva Bupa
+              </div>
+              {/* Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) */}
+              <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-blue-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
+                  2020-2022
+                </time>
+              </div>
+              {/* Content */}
+              <div className="text-slate-500">
+                Achieved a membership in the top-most club of best performing
+                Advisors on quarterly basis in Niva Bupa Health Insurance Co.
+                Ltd.
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Banner
+        text1="Talk to a real advisor"
+        text2="and get your doubts cleared."
+      />
     </div>
   );
 };

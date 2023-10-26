@@ -12,14 +12,16 @@ import { useState } from "react";
 import Contact from "../components/Contact";
 import Banner from "../components/Banner";
 import SuccessAlert from "../components/SuccessAlert";
+import Companies from "../components/Companies";
 
 export default function Home() {
   return (
     <div>
       <About />
-      <Features />
       <CustomerCarouselMedium />
       <CustomerCarouselSmall />
+      <Companies />
+      <Features />
       <Banner text1='Talk to a real advisor' text2='and get your doubts cleared.'/>
     </div>
   );
